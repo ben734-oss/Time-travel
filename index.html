@@ -69,56 +69,10 @@
     <footer class="footer">
         <p>Created by B-TECH &copy; 2025</p>
     </footer>
-<script>
-/* Cosmetic deterrent only — not security. */
-(function() {
-  // Prevent right-click
-  document.addEventListener('contextmenu', e => e.preventDefault());
 
-  // Disable common DevTools / view-source shortcuts
-  document.addEventListener('keydown', function(e) {
-    // keys: F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+Shift+C, Ctrl+U
-    if (
-      e.key === 'F12' ||
-      (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J' || e.key === 'C')) ||
-      (e.ctrlKey && (e.key === 'U' || e.key === 'S'))  // Ctrl+U (view-source), Ctrl+S (save)
-    ) {
-      e.preventDefault();
-      // optional: show a brief notification so users know why it didn't work
-      showSnack("Sorry, right-click and dev tools are disabled on this page.");
-    }
-  });
 
-  // Disable selection and dragging (prevents copy-paste of text easily)
-  document.addEventListener('selectstart', e => e.preventDefault());
-  document.addEventListener('dragstart', e => e.preventDefault());
-
-  // Optional helper: small transient notice (nice UX vs silent blocking)
-  function showSnack(msg) {
-    let el = document.getElementById('security-snack');
-    if (!el) {
-      el = document.createElement('div');
-      el.id = 'security-snack';
-      el.style.position = 'fixed';
-      el.style.bottom = '20px';
-      el.style.left = '50%';
-      el.style.transform = 'translateX(-50%)';
-      el.style.background = 'rgba(0,0,0,0.8)';
-      el.style.color = 'white';
-      el.style.padding = '8px 12px';
-      el.style.borderRadius = '6px';
-      el.style.fontSize = '14px';
-      el.style.zIndex = 99999;
-      document.body.appendChild(el);
-    }
-    el.textContent = msg;
-    el.style.opacity = '1';
-    clearTimeout(el._timeout);
-    el._timeout = setTimeout(() => { el.style.opacity = '0'; }, 2000);
-  }
-})();
-</script>
-
+ 
     <script src="script.js"></script>
 </body>
+
 </html>
