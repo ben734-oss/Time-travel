@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" 
+      content="default-src 'self'; 
+               style-src 'self' 'unsafe-inline'; 
+               script-src 'self'; 
+               img-src 'self' data:; 
+               connect-src 'self';">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Time Traveler Clock</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Time Traveler Clock</div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link active">About</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container about-container">
+        <section class="about-section">
+            <h1 class="title">ABOUT THE CREATOR</h1>
+            <div class="creator-info">
+                <h2>Benjamin Sekyere (B-TECH)</h2>
+                <div class="roles">
+                    <span class="role-tag">Software Engineer</span>
+                    <span class="role-tag">Web Developer</span>
+                    <span class="role-tag">Graphic Designer</span>
+                    <span class="role-tag">Innovator</span>
+                </div>
+                <blockquote class="vision">
+                    "Building futuristic digital experiences that blend creativity, design, and tech."
+                </blockquote>
+                <p class="bio">
+                    Benjamin is a passionate creator who specializes in developing innovative digital solutions 
+                    that push the boundaries of technology and design. With expertise across multiple domains, 
+                    he brings unique perspectives to every project.
+                </p>
+                <a href="contact.html" class="cta-button">Get in Touch</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Created by B-TECH &copy; 2025</p>
+    </footer>
+<script>
+/* Cosmetic deterrent only — not security. */
+(function() {
+  // Prevent right-click
+  document.addEventListener('contextmenu', e => e.preventDefault());
+
+  // Disable common DevTools / view-source shortcuts
+  document.addEventListener('keydown', function(e) {
+    // keys: F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+Shift+C, Ctrl+U
+    if (
+      e.key === 'F12' ||
+      (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J' || e.key === 'C')) ||
+      (e.ctrlKey && (e.key === 'U' || e.key === 'S'))  // Ctrl+U (view-source), Ctrl+S (save)
+    ) {
+      e.preventDefault();
+      // optional: show a brief notification so users know why it didn't work
+      showSnack("Sorry, right-click and dev tools are disabled on this page.");
+    }
+  });
+
+  // Disable selection and dragging (prevents copy-paste of text easily)
+  document.addEventListener('selectstart', e => e.preventDefault());
+  document.addEventListener('dragstart', e => e.preventDefault());
+
+  // Optional helper: small transient notice (nice UX vs silent blocking)
+  function showSnack(msg) {
+    let el = document.getElementById('security-snack');
+    if (!el) {
+      el = document.createElement('div');
+      el.id = 'security-snack';
+      el.style.position = 'fixed';
+      el.style.bottom = '20px';
+      el.style.left = '50%';
+      el.style.transform = 'translateX(-50%)';
+      el.style.background = 'rgba(0,0,0,0.8)';
+      el.style.color = 'white';
+      el.style.padding = '8px 12px';
+      el.style.borderRadius = '6px';
+      el.style.fontSize = '14px';
+      el.style.zIndex = 99999;
+      document.body.appendChild(el);
+    }
+    el.textContent = msg;
+    el.style.opacity = '1';
+    clearTimeout(el._timeout);
+    el._timeout = setTimeout(() => { el.style.opacity = '0'; }, 2000);
+  }
+})();
+</script>
+
+    <script src="script.js"></script>
+</body>
+</html>
