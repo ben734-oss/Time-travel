@@ -37,23 +37,61 @@ function showEasterEgg() {
 }
 
 // Predictions array
+// Positive Predictions array
 const predictions = [
-    "In 2099, pizza will be currency.",
-    "By 2075, cats will have taken over customer service roles.",
-    "In 2080, humans will communicate through memes alone.",
-    "By 2100, Monday mornings will be eliminated by popular vote.",
-    "In 2065, self-cleaning houses will rebel against messy owners.",
-    "By 2072, aliens will complain about our bad Wi-Fi signals.",
-    "In 2088, historians will argue about what 'OK Boomer' meant.",
-    "By 2095, plants will demand equal voting rights.",
-    "In 2077, the moon will get its own reality TV show.",
-    "By 2110, time travel tourism will cause historical traffic jams.",
-    "In 2060, scientists will discover that procrastination is actually a superpower.",
-    "By 2085, clouds will be used as data storage units.",
-    "In 2090, sneakers will be the official footwear of diplomatic meetings.",
-    "By 2070, dreams will be downloadable as movies.",
-    "In 2105, historians will classify emojis as a dead language."
+    "By 2075, peace treaties will be signed with smiles instead of pens.",
+    "In 2090, every home will have free clean energy from the stars.",
+    "By 2080, kindness will be the most valuable currency.",
+    "In 2100, diseases like cancer will only exist in history books.",
+    "By 2072, education will be free and personalized for everyone.",
+    "In 2088, humans will finally learn to live in harmony with nature.",
+    "By 2095, travel between planets will feel like taking a weekend road trip.",
+    "In 2077, laughter will be scientifically proven to extend human life.",
+    "By 2110, humanity will have planted more trees than ever cut down.",
+    "In 2060, technology will allow people to instantly translate every language — no barriers.",
+    "By 2085, oceans will be restored to crystal-clear beauty, full of life again.",
+    "In 2090, every child will grow up with equal opportunities, no matter where they're born.",
+    "By 2070, dreams will be recorded and used to create beautiful art.",
+    "In 2105, humans and AI will co-create masterpieces that inspire generations.",
+    "By 2120, people will work only 2 days a week — the rest will be joy and creativity.",
+    "By 2068, food scarcity will end — everyone will have enough to eat.",
+    "In 2082, space schools will allow kids to study among the stars.",
+    "By 2099, music will be a universal language understood by all species.",
+    "In 2108, the average human lifespan will pass 120 years — in good health.",
+    "By 2089, wars will be replaced by friendly competitions and innovation challenges.",
+    "In 2074, every city will have floating gardens in the skies.",
+    "By 2115, poverty will no longer exist anywhere on Earth.",
+    "In 2067, solar paint will turn every wall into a power source.",
+    "By 2102, humanity will discover cures for every known mental illness.",
+    "In 2091, all children will grow up with access to safe, clean water.",
+    "By 2076, creativity will be the top skill valued worldwide.",
+    "In 2112, people will spend more time exploring art, music, and love than working.",
+    "By 2098, robots and humans will live as true friends and collaborators.",
+    "In 2086, pollution will be reduced to near zero by innovation.",
+    "By 2106, happiness will be included as a global human right.",
+    "In 2073, travel time between continents will be less than an hour.",
+    "By 2122, humans will visit other galaxies for exploration.",
+    "In 2093, friendship networks will span across planets.",
+    "By 2087, every person will have the chance to learn and create freely.",
+    "In 2104, libraries will contain full experiences — not just books.",
+    "By 2118, empathy will be the strongest force guiding leaders.",
+    "In 2069, floating cities will be powered entirely by renewable energy.",
+    "By 2084, human creativity will lead to unimaginable beauty in design.",
+    "In 2109, everyone will live in smart, eco-friendly homes.",
+    "By 2096, humans will develop the ability to grow new organs safely.",
+    "In 2111, people will celebrate differences instead of fearing them.",
+    "By 2079, sports will be played both on Earth and in space.",
+    "In 2103, kindness will be taught as the most important subject in schools.",
+    "By 2125, humanity will discover music written in the stars.",
+    "In 2081, holidays will be spent on other planets like weekend getaways.",
+    "By 2117, oceans will glow with life like living art pieces.",
+    "In 2097, friendships will last lifetimes thanks to shared memories stored forever.",
+    "By 2107, humans will speak with animals using new technology.",
+    "In 2078, equality will no longer be a dream — it will be the norm.",
+    "By 2114, people will be able to relive their happiest moments at will.",
+    "In 2128, art and science will merge into one universal language of creation."
 ];
+
 
 // Get a random prediction
 function getRandomPrediction() {
@@ -157,4 +195,5 @@ function initApp() {
 }
 
 // Run the app when DOM is loaded
+
 document.addEventListener('DOMContentLoaded', initApp);
